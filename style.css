@@ -1,0 +1,421 @@
+*,*:before,*:after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+  //* p color: #687980; h background-color: #ffaec0;*/
+html,body{
+  width: 100%;
+}
+h2{
+  color: #ffaec0;
+  font-size: 32px;
+  font-family: 'Karla', sans-serif;
+}
+p{
+font-family: 'Karla', sans-serif;
+color: #687980;
+}
+.container{
+  max-width: 1180px;
+  margin: 0px auto;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffaec0;
+  z-index: 50;
+}
+.header:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+
+}
+.header__body{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+}
+.header__burger{
+  display: none;
+}
+.header__list{
+display: flex;
+padding: 20px;
+
+}
+.header__list li{
+list-style: none;
+font-family: 'Karla', sans-serif;
+color: #687980;
+}
+.header__list li:hover{
+  font-size: 25px;
+}
+.header__link{
+color: #687980;
+text-transform: uppercase;
+font-size: 15px;
+text-decoration: none;
+padding-left: 15px;
+}
+
+@media (max-width:767px){
+
+  .header__burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger span{
+    background-color: #687980;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top:9px;
+    padding-left: 15px;
+    left: 20px;
+    z-index: 3;
+    transition: all 0.4s easy 0s;
+  }
+  .header__burger:before,
+  .header__burger:after{
+    content: '';
+    background-color:#687980;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 20px;
+    transition: all 0.4s easy 0s;
+  }
+  .header__burger:before{
+    top: 0;
+  }
+  .header__burger:after{
+    bottom: 0;
+
+  }
+  .header__burger.active span{
+    transform: scale(0);
+  }
+  .header__burger.active:before{
+    transform: rotate(45deg);
+    top:9px;
+  }
+  .header__burger.active:after{
+    transform: rotate(-45deg);
+    bottom:9px;
+  }
+  .header__menu{
+    position: fixed;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    padding-left: 40px;
+    background-color:#ffaea4;
+    transition: all 0.3s easy 0s;
+
+  }
+  .header__menu.active{
+    left:0;
+  }
+  .header__list{
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  .header__list li{
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  body.lock{
+    overflow: hidden;
+  }
+}
+
+
+.content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5%;
+  background-color: #fbfaf8;
+}
+.content-text{
+  width: 45%;
+  text-align: center;
+  padding-top: 15%;
+  margin: 0px auto;
+
+}
+.content-text span{
+  color: #ffaec0;
+}
+.content-text h2{
+font-size: 38px;
+margin-bottom: 2%;
+background: #fbfaf8;
+position: relative;
+animation: text 4s 1;
+}
+.content-text p{
+  font-size: 28px;
+}
+@keyframes text {
+  0%{
+  color:#fbfaf8;
+  margin-bottom:-100%;
+  }
+  40%{
+    letter-spacing: 15px;
+    margin-bottom: -100%;
+  }
+  80%{
+    letter-spacing: 5px;
+    margin-bottom: -100%;
+  }
+}
+.content-pic{
+  width: 45%;
+}
+.content-pic img{
+  width: 100%;
+    border-radius: 50%;
+}
+.skills{
+  width: 100%;
+}
+.skills h2{
+  padding-top: 6%;
+  display: flex;
+  justify-content: center;
+  font-size: 38px;
+}
+.skills h3{
+  color: #ffaec0;
+  font-size: 25px;
+}
+.skill-row p{
+  font-size: 18px;
+}
+.skill-row{
+	width: 60%;
+	margin:100px auto 100px auto;
+	text-align: left;
+}
+.skill-row1{
+	width: 25%;
+	float: left;
+	margin-right:30px;
+
+}
+.skill-row2{
+	width: 25%;
+	float: right;
+	margin-right:30px;
+}
+.skill-row button{
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #ffaec0;
+  border-width: 2px;
+  border-color:#ffaec0;
+  font-family: 'Karla', sans-serif;
+  color: #687980;
+  font-size: 20px;
+}
+.skill-row button:hover{
+  background-color: #b6c9f0;
+}
+.myToolKit{
+    background-color: #fbfaf8;
+    width: 100%;
+}
+.icons span{
+  font-size: 60px;
+  color: #687980;
+}
+.myToolKit h2{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  font-size: 34px;
+  padding-bottom: 7%;
+}
+i p{
+  font-size: 15px;
+}
+span i{
+  display: flex;
+  justify-content:center;
+  margin-left: 8%;
+  padding-right: 2%;
+  padding-bottom: 7%;
+}
+.contactMe{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6%;
+}
+.formText{
+  padding-top: 7%;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.formText h2{
+  font-size: 29px;
+  padding-bottom: 20px;
+}
+.formText p{
+  text-align: center;
+  word-spacing: 5px;
+
+
+
+}
+.contactIcons {
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+
+}
+.forms{
+  width: 100%;
+
+}
+form{
+  padding-top: 8%;
+  display: inline-grid;
+  width: 80%;
+  padding-left: 5%;
+}
+
+input{
+  border-width: 2px;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+  border-color:#ffaec0;
+  background-color: #ffaec0;
+}
+textarea{
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+  border-color:#ffaec0;
+  border-width: 2px;
+  border-width: thick;
+  background-color: #ffaec0;
+}
+button{
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #ffaec0;
+  border-width: 2px;
+  border-color:#ffaec0;
+  font-family: 'Karla', sans-serif;
+  color: #687980;
+  font-size: 20px;
+}
+footer{
+  height: 30px;
+  background-color: #ffaec0;
+  display: flex;
+  justify-content: center;
+}
+
+footer p{
+  padding-top: 5px;
+  font-size: 17px;
+}
+
+@media (max-width:1200px){
+  .content{
+    width: 100%;
+  }
+}
+@media (max-width:992px){
+  .content{
+    width: 100%;
+  }
+  .icons{
+    padding-bottom: 10%;
+  }
+  .icons span{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 30px;
+  }
+  span i{
+    margin:auto;
+}
+}
+@media (max-width:767px){
+  .content{
+    max-width: none;
+    align-items: center;
+    display: block;
+  }
+  .content-text{
+    width: 100%;
+    z-index: 1;
+  }
+  .content-text p{
+    font-size: 21px;
+  }
+  .content-pic{
+    width: 70%;
+    display: block;
+    margin-left: 15%;
+  }
+  .myToolKit{
+    width: 100%;
+  }
+  .icons span{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 30px;
+  }
+  span i{
+    margin:auto;
+  }
+  .contactMe{
+    display: block;
+  }
+  .formText{
+    width: 100%;
+    margin: auto;
+    padding-left: 5%;
+  }
+  .formText p, span{
+    display: block;
+    justify-content: center;
+  }
+  form{
+    padding-left: 22%;
+  }
+  footer p{
+    font-size: 14px;
+  }
+
+}
+s

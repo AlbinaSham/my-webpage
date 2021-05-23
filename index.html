@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Albina</title>
+     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="wrapper">
+       <header class="header">
+         <div class="container">
+             <div class="header__body">
+                    <a href="#" class="header__logo">
+                    <div id="header__burger" class="header__burger">
+                      <span></span>
+                    </div>
+                             <nav  id="header__menu" class="header__menu">
+                               <ul id="header__list" class="header__list">
+                                 <li><a href="#home" class="header__link">Home</a></li>
+                                 <li><a href="#mySkills" class="header__link">My skills</a></li>
+                                 <li><a href="#myToolKit" class="header__link">My toolkit</a></li>
+                                 <li><a href="#contactMe" class="header__link">Contact me</a></li>
+                               </ul>
+                             </nav>
+                </div>
+            </div>
+          </header>
+
+              <div class="content">
+                 <div id="home" class="content-text">
+                   <h2>Hello! I'm Albina</h2>
+                   <p>A <span> developer</span> and a <span>designer</span><span style="font-size:10px">(sometimes)</span>  with a passion for creating
+                   engaging, entertaining user experiences. </p>
+
+
+                 </div>
+                 <div class="content-pic">
+                   <img src="my.png" alt="my pic">
+               </div>
+            </div>
+            <div  id="mySkills" class="skills">
+              <h2>My skills.</h2>
+              <div class="skill-row">
+                <img class="skill-row1" src="online-library.png"  alt="Freepik">
+                <h3>My library.</h3>
+                <p>Book List app which allows user to look for a book and find an information about that.
+                   Created using React.js and Google IPA</p>
+
+                <button type="button" id="btn-cliked" name="To see more">To see more</button>
+              </div>
+              <div class="skill-row">
+                <img class="skill-row2" src="list.png" alt="Freepik">
+                <h3>To-do list.</h3>
+                <p>A simple To Do List application that allows CRUD. Created by using Node.js Express and MongoDB
+                </p>
+                  <button id="btn-cliked2" type="button" name="To see more">
+                       To see more</button>
+
+
+            </div>
+            </div>
+            <div id="myToolKit" class="myToolKit">
+              <h2>My toolkit.</h2>
+              <div class="icons">
+                <span >
+                  <i class="fab fa-css3-alt fa-8px"><p>CSS3</p></i>
+                  <i class="fab fa-html5"><p>HTML5</p></i>
+                  <i class="fab fa-react"><p>React.js</p></i>
+                  <i class="fab fa-github"><p>github</p></i>
+                  <i class="fab fa-node"><p>Node.js</p></i>
+                  <i class="fab fa-js"><p>JavaScript</p></i>
+                </span>
+              </div>
+             </div>
+             <div  id="contactMe" class="contactMe">
+               <div class="formText">
+                 <h2>Let's connect</h2>
+                 <p> if you ever want to grab a coffee/bubble tea (virtually) or just want a quick
+                   chat - you can find me on social media or you can send me a message here!</p>
+                   <span class="contactIcons"style="font-size: 30px; color: #687980;">
+                   <i id="linkedin" class="fab fa-linkedin"></a></i>
+                   <i id="github" class="fab fa-github"></i>
+                 </span>
+               </div>
+               <div class="forms">
+                 <form action="https://formsubmit.co/savinovaar@email.com" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <textarea name="message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                 </form>
+               </div>
+             </div>
+               <footer>
+                 <p>Developed and designed with love Albina Sav</p>
+               </footer>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
