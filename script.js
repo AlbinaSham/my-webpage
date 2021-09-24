@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 
 $('#btn-cliked').on('click', function(){
-  window.location = 'https://book-library2021.herokuapp.com/';
+  window.location = 'https://booklibrary2021.herokuapp.com/';
 });
 $('#btn-cliked2').on('click', function(){
   window.location = 'https://github.com/AlbinaSham/TODOLIST';
